@@ -1,9 +1,6 @@
 ---
-import HeaderLink from './HeaderLink.astro'
-import { IoLogoGithub } from 'react-icons/io5'
 import FootprintIcon from './icons/footprint'
 import ThemeToggle from './ThemeToggleButton'
-import { IoLogoLinkedin } from 'react-icons/io'
 ---
 
 <header class="fixed w-full pq2 z-20 backdrop-blur-sm">
@@ -15,14 +12,6 @@ import { IoLogoLinkedin } from 'react-icons/io'
           Peter Adam
         </h2>
       </a>
-      <div class="items-center gap-6 hidden md:flex">
-        <HeaderLink href="https://github.com/peteradam0/peteradam0-blog"
-          ><IoLogoGithub /></HeaderLink
-        >
-        <HeaderLink href="https://linkedin.com/in/péter-ádám-52283220b"
-          ><IoLogoLinkedin /></HeaderLink
-        >
-      </div>
       <div class="flex-1 flex justify-end">
         <ThemeToggle client:load />
       </div>

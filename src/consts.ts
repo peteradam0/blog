@@ -4,3 +4,4 @@
 export const SITE_TITLE = 'What I do - Peter Adam';
 export const SITE_DESCRIPTION = 'Experiances';
 export const HOMEPAGE_URL = "/about"
+export const PILOT_URL = "/posts/pilot"

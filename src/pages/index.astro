@@ -1,13 +1,16 @@
 ---
+import { Image } from 'astro:assets'
 import BaseHead from '../components/BaseHead.astro'
-import Header from '../components/Header.astro'
-import Footer from '../components/Footer.astro'
-import { SITE_TITLE, SITE_DESCRIPTION, HOMEPAGE_URL } from '../consts'
 import Body from '../components/Body.astro'
 import Content from '../components/Content.astro'
-import { IoArrowForward } from 'react-icons/io5'
+import Footer from '../components/Footer.astro'
+import Header from '../components/Header.astro'
 import Masthead from '../components/Masthead.astro'
-import { Image } from 'astro:assets'
+import {
+  PILOT_URL,
+  SITE_DESCRIPTION,
+  SITE_TITLE
+} from '../consts'
 
 const posts = (await Astro.glob('./posts/*.md')).sort(
   (a, b) =>
@@ -24,22 +27,18 @@ const posts = (await Astro.glob('./posts/*.md')).sort(
   <Body>
     <Header />
     <main class="pt-[56px]">
-      <h1 class="font-mplus text-center">What I do</h1>
       <Masthead />
       <Content>
         <section>
-          <p class="mb-8 indent-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum
+          <p class="mb-8 indent-4 text-xl">
+            Hi there, I'm Peter and this is my blog. It includes some bites
+            about my life. The goal of this blog is to share my experiences
+            regarding tech sports and my random ideas. Hopefully you will find
+            something interesting here.
             <a
-              href={HOMEPAGE_URL}
+              href={PILOT_URL}
               class="inline-flex items-center gap-1 indent-1 text-orange-500"
-              >Learn more about me <IoArrowForward className="inline" /></a
+              >Pilot</a
             >
           </p>
         </section>
