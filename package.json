@@ -14,7 +14,7 @@
     "@astrojs/sitemap": "^3.1.4",
     "@astrojs/tailwind": "^5.1.4",
     "@headlessui/react": "^2.1.2",
-    "astro": "^4.14.4",
+    "astro": "^5.6.1",
     "react": "^18.3.0",
     "react-dom": "^18.3.0",
     "react-icons": "^5.5.0",
@@ -25,6 +25,7 @@
     "@inkdropapp/live-export": "^0.2.1",
     "@types/react": "^18.3.4",
     "dotenv": "^16.4.5",
+    "rehype-add-classes": "^1.0.0",
     "typescript": "^5.5.4"
   }
 }
