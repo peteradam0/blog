@@ -22,7 +22,6 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.3",
-    "@inkdropapp/live-export": "^0.2.1",
     "@types/react": "^18.3.4",
     "dotenv": "^16.4.5",
     "rehype-add-classes": "^1.0.0",
